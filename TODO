@@ -1,1 +1,4 @@
-- The 404 pages need a separate rewrite since atm the .htaccess rewrites every failed request to /.
+- The 404 pages needs a separate rewrite since atm the .htaccess rewrites every failed request to /.
+- Use <!DOCTYPE html>.
+- Make everything SSL-ready.
+- Use height and width in <img>-tags.
