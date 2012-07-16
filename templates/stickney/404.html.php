@@ -14,7 +14,7 @@
   <h1><a href="<?php echo Asaph_Config::$absolutePath; ?>"><?php echo htmlspecialchars( Asaph_Config::$title ); ?></a></h1>
 </div>
 
-<br>
+<p></p>
 
 <h2><?php include( ASAPH_PATH.'templates/random404.html.php' );?></h2>
 
