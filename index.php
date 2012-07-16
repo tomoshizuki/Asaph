@@ -15,9 +15,12 @@ if( isset($_GET['rw']) ) {
 	$params = empty($_GET) ? array() : explode( '/', key($_GET) );
 }
 
-
+// 404 page
+if( !empty($params[0]) && $params[0] == '404' ) {
+	include( ASAPH_PATH.Asaph_Config::$templates['404'] );
+}
 // about page
-if( !empty($params[0]) && $params[0] == 'about' ) {
+else if( !empty($params[0]) && $params[0] == 'about' ) {
 	include( ASAPH_PATH.Asaph_Config::$templates['about'] );
 }
 // feed

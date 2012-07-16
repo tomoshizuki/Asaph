@@ -18,6 +18,7 @@ class Asaph_Config {
 	
 	// Templates
 	public static $templates = array(
+    '404' => 'templates/whiteout/404.html.php',
 		'posts' => 'templates/whiteout/posts.html.php',
 		'about' => 'templates/whiteout/about.html.php',
 		'feed' => 'templates/rss.xml.php'
