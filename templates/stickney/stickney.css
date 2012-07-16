@@ -27,6 +27,13 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  margin: 0;
+  padding:0.2em 1.3em;
+  font-size:140%;
+  font-weight:normal;
+}
+
 a {
   color: #f01682;
   text-decoration: none;
