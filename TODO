@@ -1,0 +1,1 @@
+- The 404 pages need a separate rewrite since atm the .htaccess rewrites every failed request to /.
