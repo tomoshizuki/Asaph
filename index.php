@@ -39,4 +39,5 @@ else {
   header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
   include( ASAPH_PATH.Asaph_Config::$templates['404'] );
 }
+
 ?>
