@@ -1,4 +1,5 @@
 - The 404 pages needs a separate rewrite since atm the .htaccess rewrites every failed request to /.
+  - Done. 404's are working now but there's no need for an additional rewrite. PHP can handle this on it's own.
 - Use <!DOCTYPE html>.
 - Make everything SSL-ready.
 - Use height and width in <img>-tags.

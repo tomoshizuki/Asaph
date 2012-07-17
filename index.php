@@ -15,12 +15,8 @@ if( isset($_GET['rw']) ) {
   $params = empty($_GET) ? array() : explode( '/', key($_GET) );
 }
 
-// 404 page
-if( !empty($params[0]) && $params[0] == '404' ) {
-  include( ASAPH_PATH.Asaph_Config::$templates['404'] );
-}
 // about page
-else if( !empty($params[0]) && $params[0] == 'about' ) {
+if( !empty($params[0]) && $params[0] == 'about' ) {
   include( ASAPH_PATH.Asaph_Config::$templates['about'] );
 }
 // feed
@@ -30,7 +26,7 @@ else if( !empty($params[0]) && $params[0] == 'feed' ) {
   include( ASAPH_PATH.Asaph_Config::$templates['feed'] );
 } 
 // blog
-else {
+else if( empty($params[0]) || $params[0] == 'page' ) {
   $page = !empty($params[1]) ? $params[1]-1 : 0;
 
   $asaph = new Asaph( Asaph_Config::$postsPerPage );
@@ -38,5 +34,9 @@ else {
   $pages = $asaph->getPages();
   include( ASAPH_PATH.Asaph_Config::$templates['posts'] );
 }
-
+// 404 page
+else {
+  header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
+  include( ASAPH_PATH.Asaph_Config::$templates['404'] );
+}
 ?>
