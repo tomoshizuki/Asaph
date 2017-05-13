@@ -57,7 +57,9 @@ class DB {
     }
 
     if( !empty( $params ) ) {
-      $q = preg_replace('/:(\d+)/e', '$this->quote($params[$1 - 1])', $q );
+      $q = preg_replace_callback('/:(\d+)/', function ($matches) use ($params) {
+        return $this->quote($params[$matches[1] - 1]);
+      }, $q );
     }
     $this->numQueries++;
     $this->sql = $q;
