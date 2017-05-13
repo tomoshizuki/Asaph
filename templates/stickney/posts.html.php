@@ -23,7 +23,7 @@
     </ul>
     <?php if( $p['image'] ) { ?>
       <a href="<?php echo $p['image']; ?>" rel="whitebox" title="<?php echo $p['title']; ?>">
-        <img src="<?php echo $p['thumb']; ?>" alt="<?php echo $p['title']; ?>"/>
+        <img src="<?php echo $p['thumb']; ?>" height="<?php echo Asaph_Config::$images['thumbHeight'] ?>" width="<?php echo Asaph_Config::$images['thumbWidth'] ?>" alt="<?php echo $p['title']; ?>"/>
       </a>
     <?php } else { ?>
       <p>
