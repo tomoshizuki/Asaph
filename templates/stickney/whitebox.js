@@ -25,7 +25,7 @@ function Whitebox( waitFor ) {
     var anchors = document.getElementsByTagName('a');
     for( var i=0; i<anchors.length; i++ ) {
       var a = anchors[i];
-      if( a.rel == 'whitebox' ) {
+      if( a.rel == 'alternate' ) {
         a.onclick = function() { return that.show(this); }
       }
     }

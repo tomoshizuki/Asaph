@@ -22,7 +22,7 @@
       <li>via: <a href="<?php echo $p['source']; ?>"><?php echo $p['sourceDomain']; ?></a></li>
     </ul>
     <?php if( $p['image'] ) { ?>
-      <a href="<?php echo $p['image']; ?>" title="<?php echo $p['title']; ?>">
+      <a href="<?php echo $p['image']; ?>" rel="alternate" title="<?php echo $p['title']; ?>">
         <img src="<?php echo $p['thumb']; ?>" height="<?php echo Asaph_Config::$images['thumbHeight'] ?>" width="<?php echo Asaph_Config::$images['thumbWidth'] ?>" alt="<?php echo $p['title']; ?>"/>
       </a>
     <?php } else { ?>
