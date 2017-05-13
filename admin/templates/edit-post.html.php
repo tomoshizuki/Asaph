@@ -19,7 +19,7 @@
 
     <?php if( !empty($post['image']) ) { ?>
       <dt>Image:</dt>
-      <dd><a href="<?php echo $post['image']; ?>"><img src="<?php echo $post['thumb']; ?>" alt=""/></a></dd>
+      <dd><a href="<?php echo $post['image']; ?>"><img src="<?php echo $post['thumb']; ?>" height="<?php echo Asaph_Config::$images['thumbHeight'] ?>" width="<?php echo Asaph_Config::$images['thumbWidth'] ?>" alt=""/></a></dd>
       <dt>Title:</dt>
       <dd><input id="title" type="text" name="title" class="long" value="<?php echo $post['title']; ?>"/></dd>
 

@@ -11,7 +11,7 @@
     <tr class="<?php echo $i%2 ? 'odd' : 'even' ; ?>">
       <td class="image">
         <?php if( $p['thumb'] ) { ?>
-          <a href="?post=<?php echo $p['id'];?>"><img src="<?php echo $p['thumb']; ?>" alt=""/></a>
+          <a href="?post=<?php echo $p['id'];?>"><img src="<?php echo $p['thumb']; ?>" height="48" width="64" alt=""/></a>
         <?php } ?>
       </td>
       <td class="text">
