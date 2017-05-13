@@ -1,5 +1,3 @@
-- Use <!DOCTYPE html>.
 - Make everything SSL-ready.
-- Use height and width in <img>-tags.
 - Better use some salty nice hashes for the passwords instead of the old-fashioned md5.
 - Permanent links
