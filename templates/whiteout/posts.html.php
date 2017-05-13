@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title><?php echo htmlspecialchars( Asaph_Config::$title ); ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/whiteout.css" />
@@ -17,7 +17,7 @@
 <?php foreach( $posts as $p ) { ?>
   <div class="post">
     <?php if( $p['image'] ) { ?>
-      <a href="<?php echo $p['image']; ?>" rel="whitebox" title="<?php echo $p['title']; ?>">
+      <a href="<?php echo $p['image']; ?>" title="<?php echo $p['title']; ?>">
         <img src="<?php echo $p['thumb']; ?>" height="<?php echo Asaph_Config::$images['thumbHeight'] ?>" width="<?php echo Asaph_Config::$images['thumbWidth'] ?>" alt="<?php echo $p['title']; ?>"/>
       </a>
     <?php } else { ?>
