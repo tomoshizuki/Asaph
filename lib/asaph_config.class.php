@@ -49,7 +49,7 @@ class Asaph_Config {
 define( 'ASAPH_TABLE_POSTS',  Asaph_Config::$db['prefix'].'posts' );
 define( 'ASAPH_TABLE_USERS',  Asaph_Config::$db['prefix'].'users' );
 
-define( 'ASAPH_BASE_URL',   'http://'.Asaph_Config::$domain.Asaph_Config::$absolutePath );
+define( 'ASAPH_BASE_URL',   'https://'.Asaph_Config::$domain.Asaph_Config::$absolutePath );
 define( 'ASAPH_POST_PHP',   ASAPH_BASE_URL.'admin/post.php' );
 define( 'ASAPH_POST_JS',    ASAPH_BASE_URL.'admin/post.js.php' );
 define( 'ASAPH_POST_CSS',   ASAPH_BASE_URL.'admin/templates/post.css' );
