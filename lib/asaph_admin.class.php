@@ -33,7 +33,7 @@ class Asaph_Admin extends Asaph {
 
     $this->userId = $user['id'];
     $loginId = md5(uniqid(rand()));
-    setcookie( $this->cookieName, $loginId, time() + 3600 * 24 * 365 );
+    setcookie( $this->cookieName, $loginId, time() + 3600 * 24 * 365, Asaph_Config::$absolutePath.'admin/', Asaph_Config::$domain, true, true );
 
     $this->db->updateRow( 
       ASAPH_TABLE_USERS, 
