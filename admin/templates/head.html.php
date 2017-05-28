@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <title>Admin: Asaph</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo Asaph_Config::$absolutePath; ?>admin/templates/admin.css" />
-  <link rel="Shortcut Icon" href="<?php echo Asaph_Config::$absolutePath; ?>admin/templates/asaph.ico" />
+  <link rel="stylesheet" href="<?php echo Asaph_Config::$absolutePath; ?>admin/templates/admin.css">
+  <link rel="icon" href="<?php echo Asaph_Config::$absolutePath; ?>admin/templates/asaph.ico">
 </head>
 <body>
 

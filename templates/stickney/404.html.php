@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <title>404 Not Found!!!11</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo Asaph_Config::$absolutePath; ?>templates/stickney/stickney.css" />
-  <link rel="Shortcut Icon" href="<?php echo Asaph_Config::$absolutePath; ?>templates/stickney/asaph.ico" />
-  <script type="text/javascript" src="<?php echo Asaph_Config::$absolutePath; ?>templates/stickney/whitebox.js"></script>
+  <link rel="stylesheet" href="<?php echo Asaph_Config::$absolutePath; ?>templates/stickney/stickney.css">
+  <link rel="icon" href="<?php echo Asaph_Config::$absolutePath; ?>templates/stickney/asaph.ico">
+  <script async src="<?php echo Asaph_Config::$absolutePath; ?>templates/stickney/whitebox.js"></script>
 </head>
 <body>
 

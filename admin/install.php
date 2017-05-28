@@ -207,8 +207,8 @@ if(
 <html lang="en">
 <head>
   <title>Install: Asaph</title>
-  <link rel="stylesheet" type="text/css" href="templates/admin.css" />
-  <link rel="Shortcut Icon" href="templates/asaph.ico" />
+  <link rel="stylesheet" href="templates/admin.css">
+  <link rel="icon" href="templates/asaph.ico">
 </head>
 <body>
 

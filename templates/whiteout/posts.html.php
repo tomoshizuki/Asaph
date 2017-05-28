@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <title><?php echo htmlspecialchars( Asaph_Config::$title ); ?></title>
-  <link rel="stylesheet" type="text/css" href="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/whiteout.css" />
-  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php echo ASAPH_LINK_PREFIX; ?>feed" />
-  <link rel="Shortcut Icon" href="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/asaph.ico" />
-  <script type="text/javascript" src="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/whitebox.js"></script>
+  <link rel="stylesheet" href="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/whiteout.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php echo ASAPH_LINK_PREFIX; ?>feed">
+  <link rel="icon" href="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/asaph.ico">
+  <script async src="<?php echo Asaph_Config::$absolutePath; ?>templates/whiteout/whitebox.js"></script>
 </head>
 <body>
 
