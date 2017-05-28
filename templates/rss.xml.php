@@ -14,7 +14,7 @@
       <description>
         <?php if( $p['image'] ) { ?>
           &lt;a href=&quot;https://<?php echo Asaph_Config::$domain.$p['image']; ?>&quot;&gt;
-            &lt;img src=&quot;https://<?php echo Asaph_Config::$domain.$p['thumb']; ?>&quot; alt=&quot;&quot;/&gt;
+            &lt;img src=&quot;https://<?php echo Asaph_Config::$domain.$p['thumb']; ?>&quot; alt=&quot;<?php echo $p['title']; ?>&quot;/&gt;
           &lt;/a&gt;
         <?php } else { ?>
           &lt;p&gt;
